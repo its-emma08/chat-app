@@ -1,0 +1,17 @@
+<ion-item class="item-chat" mode="ios" lines="none">
+  <ion-avatar aria-hidden="true" slot="start">
+    <img alt="" [src]="avatarUrl" />
+  </ion-avatar>
+  <ion-label mode="ios">
+    <strong>{{username}}</strong>
+    <ion-note color="medium">
+      {{date}}
+    </ion-note>
+    <br />
+    <ion-note color="medium" class="ion-text-wrap">
+      <ion-icon name="checkmark-done-sharp">
+      </ion-icon>
+      {{message}}
+    </ion-note>
+  </ion-label>
+</ion-item>
