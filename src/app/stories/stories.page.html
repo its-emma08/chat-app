@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header id="stories-header" [translucent]="true">
   <ion-toolbar color="--ion-color-dark" mode="ios">
     <ion-buttons slot="secondary">
       <ion-button>
@@ -14,6 +14,17 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-  <ion-title><strong>Chats</strong></ion-title>
+  <ion-title><strong>Stories</strong></ion-title>
   <ion-searchbar placeholder="Preguntar a Meta AI o buscar" mode="ios"></ion-searchbar>
 </ion-header>
+
+<ion-content mode="ios">
+  <ion-list lines="inset">
+    <app-item-stories
+      *ngFor="let story of stories"
+      [username]="story.username"
+      [image]= "story.image"
+      [date]="story.date">
+    </app-item-stories>
+  </ion-list>
+</ion-content>

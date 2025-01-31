@@ -1,0 +1,10 @@
+ion-title{
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+}
+ion-tab-bar{
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    --opacity: .8;
+    backdrop-filter: saturate(180%) blur(20px);
+ }

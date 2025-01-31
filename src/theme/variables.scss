@@ -1,5 +1,5 @@
 :root {
-	--ion-color-primary: #075e54;
+	--ion-color-primary:#f6f8fc;
 	--ion-color-primary-rgb: 7,94,84;
 	--ion-color-primary-contrast: #ffffff;
 	--ion-color-primary-contrast-rgb: 255,255,255;
@@ -63,3 +63,10 @@
 	--ion-color-dark-tint: #444444;
 
 }
+
+ion-tab-bar{
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    --opacity: .8;
+    backdrop-filter: saturate(180%) blur(20px);
+ }

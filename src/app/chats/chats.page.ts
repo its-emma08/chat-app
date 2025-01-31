@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
   standalone: false
 })
 export class ChatsPage implements OnInit {
-
+  
+  constructor() { }
   chats: any[] = [
-    { username: 'Andrea M.', message: 'Hola, ¿cómo estás?', date: '08:30 p.m.', avatarUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Far.pinterest.com%2Fisabellagarzi%2Ffondos-random%2F&psig=AOvVaw0qlxZperKY8xpMWmUduqz1&ust=1738381316035000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjlmZiFn4sDFQAAAAAdAAAAABAE'},
-    { username: 'Carlos G.', message: '¿Nos vemos mañana?', date: '09:15 p.m.', avatarUrl: 'https://ionicframework.com/docs/img/demos/avatar.svg' },
-    { username: 'Lucía R.', message: 'No olvides la reunión de hoy.', date: '10:05 p.m.', avatarUrl: 'https://ionicframework.com/docs/img/demos/avatar.svg' },
-    { username: 'Fernando P.', message: 'Listo para la presentación.', date: '11:45 p.m.', avatarUrl: 'https://ionicframework.com/docs/img/demos/avatar.svg' },
+    { username: 'Joanna!', message  : 'Hola, buenos días 🌞', date: '08:30 a.m.', avatarUrl: 'https://ionicframework.com/docs/img/demos/avatar.svg'},
+    { username: 'Eliezer TIDSM', message: 'Me acabo de levantar 😴', date: '6:55 a.m.', avatarUrl: 'https://ionicframework.com/docs/img/demos/avatar.svg' },
+    { username: 'Jefa', message: 'Ya llegó??? 🧐', date: '10:05 p.m.', avatarUrl: 'https://ionicframework.com/docs/img/demos/avatar.svg' },
     { username: 'Sofía L.', message: '¿Te paso los apuntes?', date: '12:10 p.m.', avatarUrl: 'https://ionicframework.com/docs/img/demos/avatar.svg' },
     { username: 'Raúl M.', message: 'Voy en camino.', date: '12:50 p.m.', avatarUrl: 'https://ionicframework.com/docs/img/demos/avatar.svg' },
     { username: 'Gabriela O.', message: 'Gracias por tu ayuda.', date: '13:30 p.m.', avatarUrl: 'https://ionicframework.com/docs/img/demos/avatar.svg' },
@@ -41,9 +41,6 @@ export class ChatsPage implements OnInit {
     { username: 'Álvaro R.', message: 'Gracias por el dato.', date: '03:25 p.m.', avatarUrl: 'https://ionicframework.com/docs/img/demos/avatar.svg' }
   ];
   
-  
-  constructor() { }
-
   ngOnInit() {
   }
 

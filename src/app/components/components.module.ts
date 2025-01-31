@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ItemChatComponent } from '../item-chat/item-chat.component';
+import { ItemStoriesComponent } from '../item-stories/item-stories.component';
 import { IonicModule } from '@ionic/angular';
 import { HeaderComponent } from './header/header.component';
 
@@ -9,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
     ItemChatComponent,
+    ItemStoriesComponent,
     HeaderComponent
   ],
   imports: [
@@ -17,6 +19,7 @@ import { HeaderComponent } from './header/header.component';
   ],
   exports: [
     ItemChatComponent,
+    ItemStoriesComponent,
     HeaderComponent
   ]
 })
